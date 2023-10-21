@@ -3,7 +3,6 @@
 workflows:
     react-native:
         name: React Native App
-            node: latest
         scripts:
             - npm install
                 # build iOS
