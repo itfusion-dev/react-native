@@ -1,10 +1,10 @@
+# Check out https://docs.codemagic.io/getting-started/building-a-react-native-app/ for more information
+# Please review and update values in curly braces
 workflows:
-  version: 1
-  react_native:
-    name: Build React Native
-    environment:
-      flutter: stable
-    scripts:
-      - npm install
-      - npx react-native run-android --variant=release
-      - npx react-native run-ios --configuration=Release
+    react-native:
+        name: React Native App
+            node: latest
+        scripts:
+            - npm install
+                # build iOS
+                pod install
