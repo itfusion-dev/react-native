@@ -1,0 +1,10 @@
+workflows:
+  version: 1
+  react_native:
+    name: Build React Native
+    environment:
+      flutter: stable
+    scripts:
+      - npm install
+      - npx react-native run-android --variant=release
+      - npx react-native run-ios --configuration=Release
